@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Survey Form</title>
+</head>
+<body>
+  <div class="main">
+    <header class="header">
+      <h1 id="title" class="text-center">JCD Survey Form</h1>
+      <p id="description" class="thanks text-center">
+        Thanks for helping jcd learn more about you
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age<span class="hint">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+      </div>
+      <div class="form-group">
+        <p>Which option best describes what you do?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Employed</option>
+          <option value="learner">Housewife</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Would you recommend JCD to a friend?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="for sure"
+            type="radio"
+            class="input-radio"
+            checked
+          />Definitely</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="perhaps"
+            type="radio"
+            class="input-radio"
+          />Maybe</label
+        >
+
+        <label
+          ><input
+            name="user-recommend"
+            value="undecided"
+            type="radio"
+            class="input-radio"
+          />Not sure</label
+        >
+      </div>
+
+      <div class="form-group">
+        <p>What is your favorite aspect of JCD?</p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="challenges">Websites</option>
+          <option value="projects">Linux Administration</option>
+          <option value="community">Python</option>
+          <option value="openSource">Open Source</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>
+          What is your favorite programming language?
+          <span class="hint">(Check all that apply)</span>
+        </p>
+
+        <label
+          ><input
+            name="prefer"
+            value="C"
+            type="checkbox"
+            class="input-checkbox"
+          />C</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="C++"
+            type="checkbox"
+            class="input-checkbox"
+          />C++</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Javascript"
+            type="checkbox"
+            class="input-checkbox"
+          />Javascript</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Java"
+            type="checkbox"
+            class="input-checkbox"
+          />Java</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Python"
+            type="checkbox"
+            class="input-checkbox"
+          />Python</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Kotlin"
+            type="checkbox"
+            class="input-checkbox"
+          />Kotlin</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Go"
+            type="checkbox"
+            class="input-checkbox"
+          />Go</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="R"
+            type="checkbox"
+            class="input-checkbox"
+          />R</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Typescript"
+            type="checkbox"
+            class="input-checkbox"
+          />Typescript</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="SQL"
+            type="checkbox"
+            class="input-checkbox"
+          />SQL</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="PHP"
+            type="checkbox"
+            class="input-checkbox"
+          />PHP</label
+        >
+      </div>
+
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
